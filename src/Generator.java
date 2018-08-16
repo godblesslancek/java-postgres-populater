@@ -107,26 +107,8 @@ public class Generator {
     public String randomCB(){
         Random generator = new Random();
         int i = generator.nextInt(12)+1;
-        int[] fatOnes = {1,3,5,7,8,10,12};
-        int[] middleOnes = {4,6,9,11};
-        int[] skinnyOne = {2};
-        boolean fatMonth = IntStream.of(fatOnes).anyMatch(x -> x == i);
-        boolean middleMonth = IntStream.of(middleOnes).anyMatch(x -> x == i);
-        boolean skinnyMonth = IntStream.of(skinnyOne).anyMatch(x -> x == i);
-        int j=0;
-        if(fatMonth){
-            System.out.println("gros porc");
-            j = generator.nextInt(31)+1;
-        }
-        if(middleMonth){
-            System.out.println("moyen porc");
-            j = generator.nextInt(30)+1;
-        }
-        if(skinnyMonth){
-            System.out.println("petit porc");
-            j = generator.nextInt(28)+1;
-        }
-        return this.randomNumbers(4)+"-"+this.randomNumbers(4)+"-"+this.randomNumbers(4)+"-"+this.randomNumbers(4)+"  "+ Integer.toString(j) + "/" + Integer.toString(i) + "  " +this.randomNumbers(3);
+        int j = generator.nextInt(4)+2018;
+        return this.randomNumbers(4)+"-"+this.randomNumbers(4)+"-"+this.randomNumbers(4)+"-"+this.randomNumbers(4)+"  "+ Integer.toString(i) + "/" + Integer.toString(j) + "  " +this.randomNumbers(3);
     }
 
 

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9fd014d-e628-44f7-af24-c0aae24d8229" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/nice_populater/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/Generator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -40,15 +42,25 @@
       <file leaf-file-name="Generator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="128" column="174" selection-start-line="128" selection-start-column="174" selection-end-line="128" selection-end-column="174" />
+            <state relative-caret-position="121">
+              <caret line="114" column="28" lean-forward="true" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1534435647181" expanded="false" signature="186:12003" ph="..." />
-                <marker date="1534435647181" expanded="false" signature="12054:23871" ph="..." />
-                <marker date="1534435647181" expanded="false" signature="23966:35784" ph="..." />
-                <marker date="1534435647181" expanded="false" signature="35893:286856" ph="..." />
+                <marker date="1534435895877" expanded="false" signature="186:12003" ph="..." />
+                <marker date="1534435895877" expanded="false" signature="12054:23871" ph="..." />
+                <marker date="1534435895877" expanded="false" signature="23966:35784" ph="..." />
+                <marker date="1534435895877" expanded="false" signature="35893:286856" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -68,6 +80,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -80,8 +93,9 @@
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/Generatoor.java" />
         <option value="$PROJECT_DIR$/src/DBManager.java" />
-        <option value="$PROJECT_DIR$/src/Generator.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Generator.java" />
+        <option value="$PROJECT_DIR$/src/view.fxml" />
       </list>
     </option>
   </component>
@@ -171,7 +185,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -182,11 +195,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32831326" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32831326" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32882884" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14549653" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14549653" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -229,10 +242,10 @@
           <caret line="75" column="81" selection-start-line="75" selection-start-column="81" selection-end-line="75" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1534435647181" expanded="false" signature="186:12003" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="12054:23871" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="23966:35784" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="35893:286856" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="186:12003" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="12054:23871" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="23966:35784" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="35893:286856" ph="..." />
           </folding>
         </state>
       </provider>
@@ -261,10 +274,10 @@
           <caret line="75" column="81" selection-start-line="75" selection-start-column="81" selection-end-line="75" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1534435647181" expanded="false" signature="186:12003" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="12054:23871" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="23966:35784" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="35893:286856" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="186:12003" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="12054:23871" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="23966:35784" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="35893:286856" ph="..." />
           </folding>
         </state>
       </provider>
@@ -286,10 +299,10 @@
           <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1534435647181" expanded="false" signature="186:12003" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="12054:23871" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="23966:35784" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="35893:286856" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="186:12003" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="12054:23871" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="23966:35784" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="35893:286856" ph="..." />
           </folding>
         </state>
       </provider>
@@ -426,20 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="128" column="174" selection-start-line="128" selection-start-column="174" selection-end-line="128" selection-end-column="174" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1534435647181" expanded="false" signature="186:12003" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="12054:23871" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="23966:35784" ph="..." />
-            <marker date="1534435647181" expanded="false" signature="35893:286856" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -448,6 +447,28 @@
             <element signature="imports" expanded="true" />
             <marker date="1534435666253" expanded="false" signature="1585:13405" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="114" column="28" lean-forward="true" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1534435895877" expanded="false" signature="186:12003" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="12054:23871" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="23966:35784" ph="..." />
+            <marker date="1534435895877" expanded="false" signature="35893:286856" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
