@@ -3,6 +3,11 @@ import sun.nio.cs.Surrogate;
 import java.sql.*;
 import java.util.Objects;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.text.Normalizer;
+
 
 public class Main {
 
@@ -15,16 +20,15 @@ public class Main {
         ResultSet res = stmt.executeQuery();
         while(res.next()){
             System.out.println(res.getString(1)+ " " + res.getString(2));}
-        res.close();
+
 
         //insère une ligne dans la table bankcardpeople
-        String SQL = "insert into public.bank_card_people (\"first-name\", \"last-name\", \"card-number\") VALUES (?,?,?)";
+        String SQL = "insert into public.bank_card_people (\"first-name\", \"last-name\", \"card-number\") VALUES ('example','example','example')";
         PreparedStatement stmt2 = con.prepareStatement(SQL);
-        stmt2.setString(1, "ra");
+  /*      stmt2.setString(1, "ra");
         stmt2.setString(2, "ra");
-        stmt2.setString(3, "ra");
-        stmt2.executeQuery();
-        res.close();
+        stmt2.setString(3, "ra");*/
+        stmt2.executeUpdate();
 
 
         PreparedStatement stmt3 = con.prepareStatement("SELECT datname FROM pg_database WHERE datistemplate = false");
@@ -46,11 +50,34 @@ public class Main {
 
         Generator generator = new Generator();
         generator.randomName();
-        generator.randomString(44);
+        generator.personalizedBlocs("l3p4n5");
+        generator.randomFrenchWord();
 
 
 
+
+
+ /*   // mets un fichier txt dans le bon format pour faire un array
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader("list_french.txt"));
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.print("\""+line+"\",");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (br != null) {
+                    br.close();
+                }
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }*/
     }
+
 }
 
 
