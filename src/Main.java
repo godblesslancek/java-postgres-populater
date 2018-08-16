@@ -51,8 +51,8 @@ public class Main {
         Generator generator = new Generator();
         generator.randomName();
         generator.personalizedBlocs("l3p4n5");
-        generator.randomFrenchWord();
-
+   //     generator.randomFrenchWord();
+        System.out.println(generator.randomCB());
 
 
 
