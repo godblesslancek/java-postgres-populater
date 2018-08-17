@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View">
+   <children>
+      <ChoiceBox layoutX="214.0" layoutY="81.0" prefWidth="150.0" />
+      <ChoiceBox layoutX="214.0" layoutY="133.0" prefWidth="150.0" />
+      <Text layoutX="154.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bases" wrappingWidth="40.4287109375" />
+      <Text layoutX="154.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tables" />
+      <TableView layoutX="189.0" layoutY="171.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Text layoutX="51.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table sélectionnée" />
+      <Button layoutX="419.0" layoutY="346.0" mnemonicParsing="false" text="Ajouter des données" />
+      <Text layoutX="199.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue chez Nice Populater" />
+   </children>
+</AnchorPane>

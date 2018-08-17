@@ -1,5 +1,8 @@
 import sun.nio.cs.Surrogate;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.Paths;
 import java.sql.*;
 import java.util.Objects;
 
@@ -7,11 +10,13 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.Normalizer;
+import java.util.Random;
+import java.util.stream.Stream;
 
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws java.io.IOException {
 	try{
 	    //connexion, imprime 2 colonnes de la table public.bank_card_people
         Class.forName("org.postgresql.Driver");
@@ -53,6 +58,10 @@ public class Main {
         generator.personalizedBlocs("l3p4n5");
    //     generator.randomFrenchWord();
         System.out.println(generator.randomCB());
+        long count = Files.lines(Paths.get("/home/lancek/Documents/Dev/nice_populater","list_french.txt")).count();
+        System.out.println(count);
+        generator.randomFrenchWord();
+
 
 
 
