@@ -33,7 +33,7 @@ public class Main {
   /*      stmt2.setString(1, "ra");
         stmt2.setString(2, "ra");
         stmt2.setString(3, "ra");*/
-        stmt2.executeUpdate();
+ //       stmt2.executeUpdate();
 
 
         PreparedStatement stmt3 = con.prepareStatement("SELECT datname FROM pg_database WHERE datistemplate = false");
@@ -60,7 +60,7 @@ public class Main {
         System.out.println(generator.randomCB());
         long count = Files.lines(Paths.get("/home/lancek/Documents/Dev/nice_populater","list_french.txt")).count();
         System.out.println(count);
-        generator.randomFrenchWord();
+        System.out.println(generator.randomAddress());
 
 
 
