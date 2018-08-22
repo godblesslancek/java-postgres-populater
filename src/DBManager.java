@@ -1,4 +1,6 @@
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DBManager {
 
@@ -18,13 +20,27 @@ public class DBManager {
             Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Benerator","postgres","newPassword");
             PreparedStatement stmt = con.prepareStatement("SELECT datname FROM pg_database WHERE datistemplate = false");
             ResultSet res = stmt.executeQuery();
-            System.out.println("oui");
             while(res.next()){
                 System.out.println(res.getString(1));}
         }
         catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public ArrayList<String> arrayAllBases() {
+        ArrayList<String> arrayList = new ArrayList<String>();
+        try {
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Benerator","postgres","newPassword");
+            PreparedStatement stmt = con.prepareStatement("SELECT datname FROM pg_database WHERE datistemplate = false");
+            ResultSet res = stmt.executeQuery();
+            while(res.next()){
+                arrayList.add(res.getString(1));}
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        return arrayList;
     }
 
     public void printBCP() {//connexion, imprime 2 colonnes de la table public.bank_card_people

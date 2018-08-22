@@ -7,10 +7,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
-      <ChoiceBox layoutX="214.0" layoutY="81.0" prefWidth="150.0" />
-      <ChoiceBox layoutX="214.0" layoutY="133.0" prefWidth="150.0" />
+      <ChoiceBox layoutX="214.0" layoutY="81.0" prefWidth="150.0" fx:id="bases" value = "Choisissez la base"/>
+      <ChoiceBox layoutX="214.0" layoutY="133.0" prefWidth="150.0" fx:id="tables" value = "Choisissez la table"/>
       <Text layoutX="154.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bases :" wrappingWidth="51.05419921875" />
       <Text layoutX="154.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tables :" />
       <TableView layoutX="189.0" layoutY="171.0" prefHeight="200.0" prefWidth="200.0">

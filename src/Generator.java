@@ -89,7 +89,6 @@ public class Generator {
 
         try (Stream<String> lines = Files.lines(Paths.get("/home/lancek/Documents/Dev/nice_populater/src","../list_french.txt"))) {
             String iLine = lines.skip(i).findFirst().get();
-            System.out.println(iLine);
             return iLine;
         }
         catch (IOException e) {
@@ -128,15 +127,12 @@ public class Generator {
             switch(formatBloc){
                 case 'l' :
                     generatedShit.append(this.randomLetters(longueurBloc));
-                    System.out.println("heyl");
                     break;
                 case 'n' :
                     generatedShit.append(this.randomNumbers(longueurBloc));
-                    System.out.println("heyn");
                     break;
                 case 'p' :
                     generatedShit.append(this.randomPunctuation(longueurBloc));
-                    System.out.println("heyp");
                     break;
             }
         }
@@ -164,7 +160,6 @@ public class Generator {
         int zipCode = random.nextInt(99000); // perfectionner
         String[] mascSuffixes = {"an", "and","ant","ent","in","int","om","ond","ont","on","eau","au","aud","aut","o","os","ot","ai","ais","ait","es","et","ou","out","out","oux","i","il","it","is","y","at","as","ois","oit","u","us","ut","eu","er","e","age","ege","eme","ome","ome","aume","isme","as","is","os","us","ex","it","est","al","el","il","ol","eul","all","if","ef","ac","ic","oc","uc","am","um","en","air","er","erf","ert","ar","arc","ars","art","our","ours","or","ord","ors","ort","ir","oir","eur","ail","eil","euil","ueil","ing"};
         if (wayName.charAt(0) == Character.toString(wayName.charAt(0)).toUpperCase().charAt(0)){ //vérifie si la première lettre est une majuscule
-            System.out.println("nom propre");
             if (wayName.charAt(0)=='A' ||wayName.charAt(0)=='E'||wayName.charAt(0)=='I'||wayName.charAt(0)=='O'||wayName.charAt(0)=='U'){
                 pronom = "d'";
             }
