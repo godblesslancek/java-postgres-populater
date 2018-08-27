@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Menu">
+    <children>
+        <Text layoutX="199.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue chez Nice Populater" />
+        <Text layoutX="176.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tables :" />
+        <Text layoutX="176.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bases :" />
+        <ChoiceBox layoutX="251.0" layoutY="149.0" prefWidth="150.0" />
+        <ChoiceBox layoutX="251.0" layoutY="230.0" prefWidth="150.0" />
+        <Button layoutX="455.0" layoutY="230.0" mnemonicParsing="false" text="Valider" onAction="#goToPopulater"/>
+    </children>
+</AnchorPane>
