@@ -1,3 +1,5 @@
+package model;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -34,7 +36,7 @@ public class Generator {
 
     public String randomString(int length){
         String asciiChars = "!#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~" ;
-        StringBuilder generatedShit = new StringBuilder("");
+        StringBuilder generatedShit = new StringBuilder();
         for (int it =0; it<length;it++){
             Random generator = new Random();
             int i = generator.nextInt(asciiChars.length());
@@ -47,7 +49,7 @@ public class Generator {
 
     public String randomLetters(int length){
         String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" ;
-        StringBuilder generatedShit = new StringBuilder("");
+        StringBuilder generatedShit = new StringBuilder();
         for (int it =0; it<length;it++){
             Random generator = new Random();
             int i = generator.nextInt(letters.length());
@@ -59,7 +61,7 @@ public class Generator {
 
     public String randomNumbers(int length){
         String letters = "0123456789" ;
-        StringBuilder generatedShit = new StringBuilder("");
+        StringBuilder generatedShit = new StringBuilder();
         for (int it =0; it<length;it++){
             Random generator = new Random();
             int i = generator.nextInt(letters.length());
@@ -71,7 +73,7 @@ public class Generator {
 
     public String randomPunctuation(int length){
         String letters = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~" ;
-        StringBuilder generatedShit = new StringBuilder("");
+        StringBuilder generatedShit = new StringBuilder();
         for (int it =0; it<length;it++){
             Random generator = new Random();
             int i = generator.nextInt(letters.length());

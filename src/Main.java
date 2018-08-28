@@ -1,3 +1,4 @@
+import controller.MenuApp;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,11 +15,29 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("view/menu.fxml"));
+    public void start(Stage primaryStage) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/menu.fxml"));
+            Parent root = fxmlLoader.load();
+            primaryStage.setTitle("Nice Populater");
+            Scene scene = new Scene(root, 650, 450);
+
+            MenuApp controller = fxmlLoader.getController();
+            controller.setPrevStage(primaryStage);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+
+
+      /*  Parent root = FXMLLoader.load(getClass().getResource("view/menu.fxml"));
         primaryStage.setTitle("Nice Populater");
         primaryStage.setScene(new Scene(root, 650, 450));
-        primaryStage.show();
+        primaryStage.show();*/
+
     }
 
 //pour la base de données qui s'update quand je sélectionne, ajouter un listener
