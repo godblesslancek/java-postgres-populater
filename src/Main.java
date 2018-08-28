@@ -4,6 +4,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.DBManager;
+import model.Generator;
+//regarder ARX
 
 public class Main extends Application {
 
@@ -14,6 +17,8 @@ public class Main extends Application {
         launch(args);
     }
 
+
+    //ESSAYER DE METTRE LES DEUX PANES DANS UN PANE
     @Override
     public void start(Stage primaryStage) {
         try {
@@ -30,14 +35,6 @@ public class Main extends Application {
         catch(Exception e){
             e.printStackTrace();
         }
-
-
-
-      /*  Parent root = FXMLLoader.load(getClass().getResource("view/menu.fxml"));
-        primaryStage.setTitle("Nice Populater");
-        primaryStage.setScene(new Scene(root, 650, 450));
-        primaryStage.show();*/
-
     }
 
 //pour la base de données qui s'update quand je sélectionne, ajouter un listener
