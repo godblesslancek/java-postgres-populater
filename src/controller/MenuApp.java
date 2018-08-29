@@ -13,20 +13,29 @@ import java.io.IOException;
 public class MenuApp {
     public Button button;
     public Stage prevStage;
+    public Scene prevScene;
 
     public void setPrevStage(Stage stage){
         this.prevStage=stage;
     }
+    public void setPrevScene(Scene scene){
+        this.prevScene=scene;
+    }
+
 
 
     public void goToPopulater(ActionEvent event){
         try {
-            prevStage.setTitle("deuxieme page");
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/populater.fxml"));
+            prevStage.getScene().setRoot(fxmlLoader.load());
+
+
+            /*prevStage.setTitle("deuxieme page");
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/populater.fxml"));
             Pane myPane = fxmlLoader.load();
             Scene scene = new Scene(myPane);
             Populater controller = fxmlLoader.getController();
-            prevStage.setScene(scene);
+            prevStage.setScene(scene);*/
 
         } catch (Exception e) {
             e.printStackTrace();

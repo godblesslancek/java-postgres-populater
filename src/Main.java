@@ -23,12 +23,12 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/menu.fxml"));
-            Parent root = fxmlLoader.load();
+            Parent root = fxmlLoader.<Parent>load();
             primaryStage.setTitle("Nice Populater");
             Scene scene = new Scene(root, 650, 450);
-
             MenuApp controller = fxmlLoader.getController();
             controller.setPrevStage(primaryStage);
+            controller.setPrevScene(scene);
             primaryStage.setScene(scene);
             primaryStage.show();
         }
