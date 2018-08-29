@@ -28,14 +28,8 @@ public class MenuApp {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/populater.fxml"));
             prevStage.getScene().setRoot(fxmlLoader.load());
+            prevStage.setTitle("deuxieme page");
 
-
-            /*prevStage.setTitle("deuxieme page");
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/populater.fxml"));
-            Pane myPane = fxmlLoader.load();
-            Scene scene = new Scene(myPane);
-            Populater controller = fxmlLoader.getController();
-            prevStage.setScene(scene);*/
 
         } catch (Exception e) {
             e.printStackTrace();

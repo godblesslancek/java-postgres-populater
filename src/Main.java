@@ -1,8 +1,10 @@
 import controller.MenuApp;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import model.DBManager;
 import model.Generator;
@@ -22,14 +24,28 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
+            //nomme la fenêtre, loade la première scène
+            primaryStage.setTitle("Nice Populater");
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/menu.fxml"));
             Parent root = fxmlLoader.<Parent>load();
-            primaryStage.setTitle("Nice Populater");
-            Scene scene = new Scene(root, 650, 450);
+            //donne les dimensions qui vont bien aux Stage et Scene
+            Screen screen = Screen.getPrimary();
+            Rectangle2D bounds = screen.getVisualBounds();
+            double width = bounds.getWidth()/2;
+            double height = bounds.getHeight()/1.6;
+            primaryStage.setWidth(width);
+            primaryStage.setHeight(height);
+            primaryStage.setX(bounds.getWidth()/4);
+            primaryStage.setY(bounds.getHeight()/5);
+            Scene scene = new Scene(root, bounds.getWidth(), bounds.getHeight());//650,450
+
+            primaryStage.setScene(scene);
+
+            // donne les Stage et Scene au Controller FXML
             MenuApp controller = fxmlLoader.getController();
             controller.setPrevStage(primaryStage);
             controller.setPrevScene(scene);
-            primaryStage.setScene(scene);
+
             primaryStage.show();
         }
         catch(Exception e){
