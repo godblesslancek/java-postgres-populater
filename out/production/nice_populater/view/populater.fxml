@@ -7,8 +7,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
-  <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="688.0" prefWidth="598.0" />
-  </content>
-</ScrollPane>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Populater">
+   <children>
+      <Text layoutX="286.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yes!" />
+   </children>
+</AnchorPane>
