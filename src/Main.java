@@ -35,6 +35,10 @@ public class Main extends Application {
             double height = bounds.getHeight()/1.6;
             primaryStage.setWidth(width);
             primaryStage.setHeight(height);
+            primaryStage.setMinWidth(width);
+            primaryStage.setMinHeight(height);
+            primaryStage.setMaxWidth(width);
+            primaryStage.setMaxHeight(height);
             primaryStage.setX(bounds.getWidth()/4);
             primaryStage.setY(bounds.getHeight()/5);
             Scene scene = new Scene(root, bounds.getWidth(), bounds.getHeight());//650,450
