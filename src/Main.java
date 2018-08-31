@@ -49,6 +49,7 @@ public class Main extends Application {
             MenuApp controller = fxmlLoader.getController();
             controller.setPrevStage(primaryStage);
             controller.setPrevScene(scene);
+            controller.setBases();
 
             primaryStage.show();
         }
