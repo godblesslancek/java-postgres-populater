@@ -50,6 +50,7 @@ public class Main extends Application {
             controller.setPrevStage(primaryStage);
             controller.setPrevScene(scene);
             controller.setBases();
+            controller.setTables();
 
             primaryStage.show();
         }

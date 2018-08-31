@@ -33,18 +33,33 @@ public class DBManager {
     }
 
     public ArrayList<String> arrayAllBases() {
-        ArrayList<String> bases = new ArrayList<String>();
+        ArrayList<String> tables = new ArrayList<String>();
         try {
             Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Benerator","postgres","newPassword");
             PreparedStatement stmt = con.prepareStatement("SELECT datname FROM pg_database WHERE datistemplate = false");
             ResultSet res = stmt.executeQuery();
             while(res.next()){
-                bases.add(res.getString(1));}
+                tables.add(res.getString(1));}
         }
         catch (Exception e) {
             e.printStackTrace();
         }
-        return bases;
+        return tables;
+    }
+
+    public ArrayList<String> arrayAllTables() {
+        ArrayList<String> tables = new ArrayList<String>();
+        try {
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Benerator","postgres","newPassword");
+            PreparedStatement stmt = con.prepareStatement("SELECT table_name FROM information_schema.tables WHERE table_schema='public'");
+            ResultSet res = stmt.executeQuery();
+            while(res.next()){
+                tables.add(res.getString(1));}
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        return tables;
     }
 
     public void printBCP() {//connexion, imprime 2 colonnes de la table public.bank_card_people
