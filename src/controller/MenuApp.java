@@ -31,8 +31,15 @@ public class MenuApp {
         bases.setItems(FXCollections.observableArrayList(db.arrayAllBases()));
     }
 
-    public void setTables(){
+  /*  public void setTables(){
         tables.setItems(FXCollections.observableArrayList(db.arrayAllTables()));
+
+    }*/
+
+    public void tablesFromBase(){
+        String base = bases.getSelectionModel().getSelectedItem().toString();
+        tables.setItems(FXCollections.observableArrayList(db.arraySpecTables(base)));
+
 
     }
 

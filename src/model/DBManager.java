@@ -47,10 +47,10 @@ public class DBManager {
         return tables;
     }
 
-    public ArrayList<String> arrayAllTables() {
+    public ArrayList<String> arraySpecTables(String base) {
         ArrayList<String> tables = new ArrayList<String>();
-        try {
-            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Benerator","postgres","newPassword");
+        try { // essayer de mettre un listener!!
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/"+base,"postgres","newPassword");
             PreparedStatement stmt = con.prepareStatement("SELECT table_name FROM information_schema.tables WHERE table_schema='public'");
             ResultSet res = stmt.executeQuery();
             while(res.next()){
