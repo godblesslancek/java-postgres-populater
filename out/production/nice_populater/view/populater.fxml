@@ -11,7 +11,7 @@
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="522.0" prefWidth="597.0">
          <children>
-            <GridPane fx:id="table" layoutX="63.0" layoutY="112.0" prefHeight="236.0" prefWidth="472.0">
+            <GridPane fx:id="tableOutput" layoutX="63.0" layoutY="112.0" prefHeight="236.0" prefWidth="472.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

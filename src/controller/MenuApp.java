@@ -37,25 +37,28 @@ public class MenuApp {
     }*/
 
     public void tablesFromBase(){
-        String base = bases.getSelectionModel().getSelectedItem().toString();
-        tables.setItems(FXCollections.observableArrayList(db.arraySpecTables(base)));
-
-
+        try {String base = bases.getSelectionModel().getSelectedItem().toString();
+        tables.setItems(FXCollections.observableArrayList(db.arraySpecTables(base)));}
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 
     public void goToPopulater(ActionEvent event){
         try {
+            if (!(bases.getValue() == null) && !(tables.getValue() == null)){
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/populater.fxml"));
             prevStage.getScene().setRoot(fxmlLoader.load());
             prevStage.setTitle("deuxieme page");
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
+            Populater controllerPopulater = fxmlLoader.getController();
+            controllerPopulater.setBase(bases.getValue().toString());
+            controllerPopulater.setTable(tables.getValue().toString()); }
+            else{
+                System.out.println("Choisissez une base et une table");
+            }
         }
-
+        catch (Exception e) {
+            e.printStackTrace();}
     }
-
-
 }
