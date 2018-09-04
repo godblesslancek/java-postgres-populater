@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import model.DBManager;
 
 import java.io.IOException;
+import java.sql.ResultSet;
 
 public class MenuApp {
     public Button button;
@@ -50,10 +51,14 @@ public class MenuApp {
             if (!(bases.getValue() == null) && !(tables.getValue() == null)){
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/populater.fxml"));
             prevStage.getScene().setRoot(fxmlLoader.load());
-            prevStage.setTitle("deuxieme page");
+            //prevStage.setTitle("deuxieme page");
             Populater controllerPopulater = fxmlLoader.getController();
             controllerPopulater.setBase(bases.getValue().toString());
-            controllerPopulater.setTable(tables.getValue().toString()); }
+            controllerPopulater.setTable(tables.getValue().toString());
+            controllerPopulater.setGridName();
+            ResultSet rs = db.arrayCertainTable(bases.getValue().toString(),tables.getValue().toString());
+            controllerPopulater.setTableView(rs);
+            }
             else{
                 System.out.println("Choisissez une base et une table");
             }

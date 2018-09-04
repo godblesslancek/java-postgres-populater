@@ -91,5 +91,21 @@ public class DBManager {
 
     }
 
+    public ResultSet arrayCertainTable(String base, String table){
+        try {
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/"+base,"postgres","newPassword");
+            String SQL = "select * from public."+table;
+            PreparedStatement stmt = con.prepareStatement(SQL);
+            ResultSet res = stmt.executeQuery();
+            return res;
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+
+
+    }
+
 
 }

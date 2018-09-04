@@ -52,6 +52,8 @@ public class Main extends Application {
             controller.setBases();
 
             primaryStage.show();
+            DBManager db = new DBManager();
+            System.out.println(db.arrayCertainTable("Benerator","bank_card_people"));
         }
         catch(Exception e){
             e.printStackTrace();
