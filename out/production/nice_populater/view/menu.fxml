@@ -8,16 +8,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuApp">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuApp">
     <children>
-        <Text layoutX="199.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue chez Nice Populater" />
-        <Text layoutX="176.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tables :" />
-        <Text layoutX="176.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bases :" />
-        <ChoiceBox layoutX="251.0" layoutY="149.0" prefWidth="150.0" fx:id="bases"/>
-        <ChoiceBox layoutX="251.0" layoutY="230.0" prefWidth="150.0" fx:id="tables" onMouseClicked="#tablesFromBase"/>
-        <Button layoutX="455.0" layoutY="230.0" mnemonicParsing="false" text="Valider" onAction="#goToPopulater"/>
+        <Text layoutX="302.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue chez Nice Populator" />
+        <Text layoutX="279.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tables :" />
+        <Text layoutX="279.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bases :" />
+        <ChoiceBox fx:id="bases" layoutX="354.0" layoutY="247.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="tables" layoutX="354.0" layoutY="328.0" onMouseClicked="#tablesFromBase" prefWidth="150.0" />
+        <Button layoutX="558.0" layoutY="328.0" mnemonicParsing="false" onAction="#goToPopulater" text="Valider" />
     </children>
 </AnchorPane>
-
-

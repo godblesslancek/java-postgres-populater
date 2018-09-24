@@ -10,6 +10,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.util.Callback;
+import model.DBManager;
 import sun.plugin.javascript.navig.Anchor;
 
 import java.sql.ResultSet;
@@ -26,6 +27,10 @@ public class Populater {
     AnchorPane anchorPane;
     @FXML
     ChoiceBox numberNewLines;
+    @FXML
+    Button precedent;
+    @FXML
+    Button addToTable;
     public String base;
     public String table;
 
@@ -55,10 +60,22 @@ public class Populater {
         this.table = table;
     }
 
-    public void setTableOutput() {
+    public void precedent() {
 
 
     }
+
+    public void addToTable() {
+        if (!(button.getValue() == null) && !(tables.getValue() == null)){
+            DBManager db = new DBManager();
+        }
+
+
+
+
+    }
+
+
 
 
     public void setTableView(ResultSet rs) {
@@ -92,8 +109,8 @@ public class Populater {
                 ChoiceBox<String> choice = new ChoiceBox<>();
                 choice.getItems().addAll("Personne","Chaîne","Lettre", "Nombre", "Ponctuation", "Mot","Carte bancaire", "Adresse");
                 anchorPane.getChildren().add(choice);
-                AnchorPane.setTopAnchor(choice, 350.0);
-                AnchorPane.setLeftAnchor(choice, 30.0+i*100);
+                AnchorPane.setTopAnchor(choice, 436.0);
+                AnchorPane.setLeftAnchor(choice, 180.0+i*100);
                 //FINALLY ADDED TO TableView
                 int colonnes = rs.getMetaData().getColumnCount();
                 System.out.println("il y a "+colonnes+" colonnes");

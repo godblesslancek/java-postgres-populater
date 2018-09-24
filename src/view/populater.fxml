@@ -7,12 +7,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Populater">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Populater">
    <children>
-      <Text fx:id="nameBase" layoutX="244.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Base" />
-      <Text fx:id="nameTable" layoutX="244.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table" />
-      <TableView fx:id="tableView" layoutX="27.0" layoutY="60.0" prefHeight="278.0" prefWidth="541.0" />
-      <Button layoutX="538.0" layoutY="361.0" mnemonicParsing="false" text="Button" />
-      <ChoiceBox fx:id="numberNewLines" layoutX="-4.0" layoutY="361.0" prefHeight="25.0" prefWidth="32.0" />
+      <Text fx:id="nameBase" layoutX="396.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Base" />
+      <Text fx:id="nameTable" layoutX="396.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table" />
+      <TableView fx:id="tableView" layoutX="179.0" layoutY="136.0" prefHeight="278.0" prefWidth="541.0" />
+      <Button fx:id="addToTable" layoutX="797.0" layoutY="437.0" mnemonicParsing="false" text="Ajouter" onAction="#addToTable"/>
+      <ChoiceBox fx:id="numberNewLines" layoutX="111.0" layoutY="437.0" prefHeight="25.0" prefWidth="32.0" />
+      <Button fx:id="precedent" layoutX="49.0" layoutY="46.0" mnemonicParsing="false" onAction="#precedent" text="Précédent" />
    </children>
 </AnchorPane>
