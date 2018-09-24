@@ -4,12 +4,11 @@
     <list default="true" id="b9fd014d-e628-44f7-af24-c0aae24d8229" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/nice_populater/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nice_populater/controller/MenuApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/controller/MenuApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nice_populater/controller/Populater.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/nice_populater/controller/Populater$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/controller/Populater$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/nice_populater/controller/Populater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/controller/Populater.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/nice_populater/model/DBManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/model/DBManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/nice_populater/view/populater.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/view/populater.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MenuApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Populater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Populater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DBManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/populater.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/populater.fxml" afterDir="false" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
+            <state relative-caret-position="150">
+              <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,38 +38,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Populater.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Populater.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/Populater.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="33">
+              <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="populater.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="populater.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/populater.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="150">
+              <caret line="10" column="241" selection-start-line="10" selection-start-column="241" selection-end-line="10" selection-end-column="241" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/menu.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="11" column="240" selection-start-line="11" selection-start-column="206" selection-end-line="11" selection-end-column="240" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="MenuApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/MenuApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -78,12 +79,10 @@
       <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="96" column="55" lean-forward="true" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
+            <state relative-caret-position="33">
+              <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#980#988#0" expanded="true" />
-                <element signature="e#1605#1613#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,9 +101,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>arrayList</find>
+      <find>Benerator</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>Example</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -124,19 +125,19 @@
         <option value="$PROJECT_DIR$/src/menu.fxml" />
         <option value="$PROJECT_DIR$/src/controller/Menu.java" />
         <option value="$PROJECT_DIR$/src/view/menu.fxml" />
-        <option value="$PROJECT_DIR$/src/view/populater.fxml" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/model/DBManager.java" />
-        <option value="$PROJECT_DIR$/src/controller/MenuApp.java" />
         <option value="$PROJECT_DIR$/src/controller/Populater.java" />
+        <option value="$PROJECT_DIR$/src/model/DBManager.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/controller/MenuApp.java" />
+        <option value="$PROJECT_DIR$/src/view/populater.fxml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="721" />
-    <option name="height" value="707" />
+    <option name="width" value="1299" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -145,6 +146,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,7 +181,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -242,6 +243,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -256,13 +258,13 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32831326" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80815345" visible="true" weight="0.23064645" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80815345" visible="true" weight="0.27214685" />
       <window_info id="Structure" order="1" sideWeight="0.19184652" side_tool="true" weight="0.23064645" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39937598" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -272,28 +274,28 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917318" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.349454" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80815345" visible="true" weight="0.23064645" />
       <window_info id="Structure" order="1" sideWeight="0.19184652" side_tool="true" visible="true" weight="0.23064645" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917318" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32831326" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32605305" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32960895" />
@@ -324,8 +326,6 @@
           <caret line="35" column="98" selection-start-line="35" selection-start-column="98" selection-end-line="35" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#980#988#0" expanded="true" />
-            <element signature="e#1605#1613#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -348,12 +348,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/menu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -394,12 +394,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/menu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -440,12 +440,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/menu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -642,14 +642,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/view/menu.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -657,55 +649,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/model/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
+        <state relative-caret-position="33">
+          <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DBManager.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="96" column="55" lean-forward="true" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
+        <state relative-caret-position="150">
+          <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#980#988#0" expanded="true" />
-            <element signature="e#1605#1613#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/MenuApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Populater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/menu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="11" column="240" selection-start-line="11" selection-start-column="206" selection-end-line="11" selection-end-column="240" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/populater.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Populater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="241" selection-start-line="10" selection-start-column="241" selection-end-line="10" selection-end-column="241" />
         </state>
       </provider>
     </entry>

@@ -53,7 +53,7 @@ public class Main extends Application {
 
             primaryStage.show();
             DBManager db = new DBManager();
-            System.out.println(db.arrayCertainTable("Benerator","bank_card_people"));
+            System.out.println(db.arrayCertainTable("Example","bank_card_people"));
         }
         catch(Exception e){
             e.printStackTrace();

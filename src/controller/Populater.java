@@ -6,6 +6,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.GridPane;
@@ -88,6 +89,41 @@ public class Populater {
                 //FINALLY ADDED TO TableView
                 tableView.setItems(data);
             }
+
+        /*    Callback<TableColumn<Person, String>, TableCell<Person, String>> cellFactory = new Callback<TableColumn<Person, String>, TableCell<Person, String>>() {
+                        @Override
+                        public TableCell call(final TableColumn<Person, String> param) {
+                            final TableCell<Person, String> cell = new TableCell<Person, String>() {
+
+                                final Button btn = new Button("Just Do It");
+
+                                @Override
+                                public void updateItem(String item, boolean empty) {
+                                    super.updateItem(item, empty);
+                                    if (empty) {
+                                        setGraphic(null);
+                                        setText(null);
+                                    } else {
+                                        btn.setOnAction(event -> {
+                                            Person person = getTableView().getItems().get(getIndex());
+                                            System.out.println(person.getFirstName()
+                                                    + "   " + person.getLastName());
+                                        });
+                                        setGraphic(btn);
+                                        setText(null);
+                                    }
+                                }
+                            };
+                            return cell;
+                        }
+                    }*/;
+
+            //probable que marche https://stackoverflow.com/questions/29489366/how-to-add-button-in-javafx-table-view#
+            //https://stackoverflow.com/questions/20596962/adding-new-row-with-button-to-javafx-tableview
+            //https://stackoverflow.com/questions/31139260/add-a-button-to-a-cells-in-a-tableview-javafx
+            //sinon get nombre de colonnes, calculer les positions et rajouter des boutons et menu deroulants à ces positions
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

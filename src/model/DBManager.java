@@ -21,7 +21,7 @@ public class DBManager {
 
     public void printAllBases() {
         try {
-            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Benerator","postgres","newPassword");
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Example","postgres","newPassword");
             PreparedStatement stmt = con.prepareStatement("SELECT datname FROM pg_database WHERE datistemplate = false");
             ResultSet res = stmt.executeQuery();
             while(res.next()){
@@ -35,7 +35,7 @@ public class DBManager {
     public ArrayList<String> arrayAllBases() {
         ArrayList<String> tables = new ArrayList<String>();
         try {
-            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Benerator","postgres","newPassword");
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Example","postgres","newPassword");
             PreparedStatement stmt = con.prepareStatement("SELECT datname FROM pg_database WHERE datistemplate = false");
             ResultSet res = stmt.executeQuery();
             while(res.next()){
@@ -64,7 +64,7 @@ public class DBManager {
 
     public void printBCP() {//connexion, imprime 2 colonnes de la table public.bank_card_people
         try {
-            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Benerator","postgres","newPassword");
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Example","postgres","newPassword");
             PreparedStatement stmt = con.prepareStatement("select * from public.bank_card_people");
             ResultSet res = stmt.executeQuery();
             while(res.next()){
@@ -77,7 +77,7 @@ public class DBManager {
 
     public void insertIntoBCP(String firstName, String lastName, String cardNumber){   //insère une ligne dans la table bankcardpeople
         try {
-            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Benerator","postgres","newPassword");
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Example","postgres","newPassword");
             String SQL = "insert into public.bank_card_people (\"first-name\", \"last-name\", \"card-number\") VALUES (?,?,?)";
 
             PreparedStatement stmt2 = con.prepareStatement(SQL);
