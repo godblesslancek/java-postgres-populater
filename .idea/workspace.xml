@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9fd014d-e628-44f7-af24-c0aae24d8229" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nice_populater/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nice_populater/controller/Populater$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/controller/Populater$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nice_populater/controller/Populater.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/controller/Populater.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nice_populater/model/DBManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/model/DBManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/nice_populater/view/populater.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/nice_populater/view/populater.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Populater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Populater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DBManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/populater.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/populater.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +22,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+            <state relative-caret-position="60">
+              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,21 +31,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Populater.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Populater.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/Populater.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+            <state relative-caret-position="225">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="populater.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Generator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Generator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2712">
+              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="populater.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/populater.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="241" selection-start-line="10" selection-start-column="241" selection-end-line="10" selection-end-column="241" />
+            <state relative-caret-position="135">
+              <caret line="9" column="260" selection-start-line="9" selection-start-column="260" selection-end-line="9" selection-end-column="260" />
             </state>
           </provider>
         </entry>
@@ -70,8 +72,8 @@
       <file leaf-file-name="MenuApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/MenuApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+            <state relative-caret-position="167">
+              <caret line="59" column="49" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -125,11 +127,11 @@
         <option value="$PROJECT_DIR$/src/menu.fxml" />
         <option value="$PROJECT_DIR$/src/controller/Menu.java" />
         <option value="$PROJECT_DIR$/src/view/menu.fxml" />
-        <option value="$PROJECT_DIR$/src/controller/Populater.java" />
         <option value="$PROJECT_DIR$/src/model/DBManager.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/controller/MenuApp.java" />
         <option value="$PROJECT_DIR$/src/view/populater.fxml" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/controller/Populater.java" />
       </list>
     </option>
   </component>
@@ -254,11 +256,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.349454" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.349454" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32831326" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80815345" visible="true" weight="0.27214685" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80815345" visible="true" weight="0.27214685" />
       <window_info id="Structure" order="1" sideWeight="0.19184652" side_tool="true" weight="0.23064645" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -642,13 +644,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/model/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
@@ -659,27 +654,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/view/populater.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/MenuApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Populater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+        <state relative-caret-position="135">
+          <caret line="9" column="260" selection-start-line="9" selection-start-column="260" selection-end-line="9" selection-end-column="260" />
         </state>
       </provider>
     </entry>
@@ -691,11 +670,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/populater.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/controller/MenuApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="241" selection-start-line="10" selection-start-column="241" selection-end-line="10" selection-end-column="241" />
+        <state relative-caret-position="167">
+          <caret line="59" column="49" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2712">
+          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Populater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
         </state>
       </provider>
     </entry>

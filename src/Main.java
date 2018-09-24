@@ -25,7 +25,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
             //nomme la fenêtre, loade la première scène
-            primaryStage.setTitle("Nice Populater");
+            primaryStage.setTitle("Nice Populator");
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/menu.fxml"));
             Parent root = fxmlLoader.<Parent>load();
             //donne les dimensions qui vont bien aux Stage et Scene

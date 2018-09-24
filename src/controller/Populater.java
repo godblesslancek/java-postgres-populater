@@ -5,13 +5,12 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.util.Callback;
+import sun.plugin.javascript.navig.Anchor;
 
 import java.sql.ResultSet;
 
@@ -23,6 +22,10 @@ public class Populater {
     Text nameTable;
     @FXML
     TableView tableView;
+    @FXML
+    AnchorPane anchorPane;
+    @FXML
+    ChoiceBox numberNewLines;
     public String base;
     public String table;
 
@@ -86,7 +89,14 @@ public class Populater {
 
                 }
 
+                ChoiceBox<String> choice = new ChoiceBox<>();
+                choice.getItems().addAll("Personne","Chaîne","Lettre", "Nombre", "Ponctuation", "Mot","Carte bancaire", "Adresse");
+                anchorPane.getChildren().add(choice);
+                AnchorPane.setTopAnchor(choice, 350.0);
+                AnchorPane.setLeftAnchor(choice, 30.0+i*100);
                 //FINALLY ADDED TO TableView
+                int colonnes = rs.getMetaData().getColumnCount();
+                System.out.println("il y a "+colonnes+" colonnes");
                 tableView.setItems(data);
             }
 
