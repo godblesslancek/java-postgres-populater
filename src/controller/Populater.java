@@ -66,10 +66,10 @@ public class Populater {
     }
 
     public void addToTable() {
-        if (!(button.getValue() == null) && !(tables.getValue() == null)){
+       /*if (!(button.getValue() == null) && !(tables.getValue() == null)){
             DBManager db = new DBManager();
         }
-
+*/
 
 
 
@@ -106,16 +106,12 @@ public class Populater {
 
                 }
 
-                ChoiceBox<String> choice = new ChoiceBox<>();
-                choice.getItems().addAll("Personne","Chaîne","Lettre", "Nombre", "Ponctuation", "Mot","Carte bancaire", "Adresse");
-                anchorPane.getChildren().add(choice);
-                AnchorPane.setTopAnchor(choice, 436.0);
-                AnchorPane.setLeftAnchor(choice, 180.0+i*100);
                 //FINALLY ADDED TO TableView
                 int colonnes = rs.getMetaData().getColumnCount();
                 System.out.println("il y a "+colonnes+" colonnes");
                 tableView.setItems(data);
             }
+
 
         /*    Callback<TableColumn<Person, String>, TableCell<Person, String>> cellFactory = new Callback<TableColumn<Person, String>, TableCell<Person, String>>() {
                         @Override
@@ -152,6 +148,25 @@ public class Populater {
 
 
         } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void setSelectors(int numberOfSelectors){
+        try {
+            numberNewLines.getItems().addAll("1","2","3", "4", "5", "6","7", "8");
+            numberNewLines.setValue("1");   
+            for (int i = 0;i<numberOfSelectors;i++) {
+                ChoiceBox<String> choice = new ChoiceBox<>();
+                choice.setValue("Personne");
+                String nameChoiceBox = "colonne" + Integer.toString(i);
+                choice.getItems().addAll("Personne", "Chaîne", "Lettre", "Nombre", "Ponctuation", "Mot", "Carte bancaire", "Adresse");
+                anchorPane.getChildren().add(choice);
+                AnchorPane.setTopAnchor(choice, 436.0 + i * 35);
+                AnchorPane.setLeftAnchor(choice, 180.0);
+        }
+        }
+        catch (Exception e){
             e.printStackTrace();
         }
     }

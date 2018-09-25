@@ -14,7 +14,7 @@ import model.DBManager;
 import java.io.IOException;
 import java.sql.ResultSet;
 
-public class MenuApp {
+public class Menu {
     public Button button;
     public Stage prevStage;
     public Scene prevScene;
@@ -58,6 +58,7 @@ public class MenuApp {
             controllerPopulater.setGridName();
             ResultSet rs = db.arrayCertainTable(bases.getValue().toString(),tables.getValue().toString());
             controllerPopulater.setTableView(rs);
+            controllerPopulater.setSelectors(rs.getMetaData().getColumnCount()-1);
             }
             else{
                 System.out.println("Choisissez une base et une table");

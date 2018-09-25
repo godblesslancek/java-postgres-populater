@@ -1,4 +1,4 @@
-import controller.MenuApp;
+import controller.Menu;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
@@ -7,7 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import model.DBManager;
-import model.Generator;
 //regarder ARX
 
 public class Main extends Application {
@@ -48,7 +47,7 @@ public class Main extends Application {
             primaryStage.setScene(scene);
 
             // donne les Stage et Scene au Controller FXML
-            MenuApp controller = fxmlLoader.getController();
+            Menu controller = fxmlLoader.getController();
             controller.setPrevStage(primaryStage);
             controller.setPrevScene(scene);
             controller.setBases();
