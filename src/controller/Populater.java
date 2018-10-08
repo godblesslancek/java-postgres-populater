@@ -11,6 +11,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.util.Callback;
 import model.DBManager;
+import model.Generator;
 import sun.plugin.javascript.navig.Anchor;
 
 import java.sql.ResultSet;
@@ -43,9 +44,11 @@ public class Populater {
     public int numberOfSelectors;
 
 
-    public List<ChoiceBox<String>> listChoiceBoxes;
+    public ArrayList<ChoiceBox<String>> listChoiceBoxes;
 
     public void initialize() {
+        ArrayList<ChoiceBox<String>> list = new ArrayList<ChoiceBox<String>>();
+        listChoiceBoxes = list;
     }
 
     public void setGridName() {
@@ -160,7 +163,7 @@ public class Populater {
                 ChoiceBox<String> choice = new ChoiceBox<>();
                 choice.getItems().addAll("Personne", "Chaîne", "Lettre", "Nombre", "Ponctuation", "Mot", "Carte bancaire", "Adresse");
                 choice.setValue("Personne");
-//                listChoiceBoxes.add(choice);
+                listChoiceBoxes.add(choice);
                 anchorPane.getChildren().add(choice);
                 AnchorPane.setTopAnchor(choice, 436.0 + i * 35);
                 AnchorPane.setLeftAnchor(choice, 180.0);
@@ -179,15 +182,46 @@ public class Populater {
         try {
             List<String> typeOfWantedData = new ArrayList<String>();
             DBManager db = DBManager.getInstance();
+            Generator generator = Generator.getInstance();
             for (ChoiceBox cb : listChoiceBoxes){
                 typeOfWantedData.add(cb.getValue().toString());
             }
+            ArrayList<String> datas= new ArrayList<String>();
+            for (String wantedType : typeOfWantedData){
+                switch (wantedType){
+                    case "Personne":
+                        datas.add(generator.randomName());
+                        break;
+                    case "Chaîne":
+                        datas.add(generator.randomString(10));
+                        break;
+                    case "Lettre":
+                        datas.add(generator.randomLetters(10));
+                        break;
+                    case "Nombre":
+                        datas.add(generator.randomNumbers(10));
+                        break;
+                    case "Ponctuation":
+                        datas.add(generator.randomPunctuation(10));
+                        break;
+                    case "Mot":
+                        datas.add(generator.randomFrenchWord());
+                        break;
+                    case "Carte bancaire":
+                        datas.add(generator.randomCB());
+                        break;
+                    case "Adresse":
+                        datas.add(generator.randomAddress());
+                        break;
+                }
+            }
+            db.insertInto(table,datas);
             System.out.println(typeOfWantedData);
            // String[] randomData = {string1,string2,string3};
          //   db.insertInto("bank_card_people",randomData);
         }
         catch (Exception e){
-
+            e.printStackTrace();
         }
     }
 

@@ -101,7 +101,7 @@ public final class DBManager {
 
     }
 
-    public void insertInto(String table, String[] datas){
+    public void insertInto(String table, ArrayList<String> datas){
         try {
             Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Example","postgres","newPassword");
             String SQL = "insert into public."+table+" (\"first-name\", \"last-name\", \"card-number\") VALUES (?,?,?)";
