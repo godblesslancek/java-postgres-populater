@@ -48,15 +48,14 @@ public final class Generator {
 
     public String randomString(int length){
         String asciiChars = "!#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~" ;
-        StringBuilder generatedShit = new StringBuilder();
+        StringBuilder generatedStuff = new StringBuilder();
         for (int it =0; it<length;it++){
             Random generator = new Random();
             int i = generator.nextInt(asciiChars.length());
-            generatedShit.append(asciiChars.charAt(i));
+            generatedStuff.append(asciiChars.charAt(i));
 
         }
-        System.out.println(generatedShit);
-        return generatedShit.toString();
+        return generatedStuff.toString();
     }
 
     public String randomLetters(int length){

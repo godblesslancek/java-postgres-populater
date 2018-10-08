@@ -183,12 +183,13 @@ public class Populater {
             List<String> typeOfWantedData = new ArrayList<String>();
             DBManager db = DBManager.getInstance();
             Generator generator = Generator.getInstance();
-            for (ChoiceBox cb : listChoiceBoxes){
+            for (ChoiceBox cb : listChoiceBoxes) {
                 typeOfWantedData.add(cb.getValue().toString());
             }
-            ArrayList<String> datas= new ArrayList<String>();
-            for (String wantedType : typeOfWantedData){
-                switch (wantedType){
+            for (int number = 0; number < Integer.parseInt(numberNewLines.getValue().toString()); number++) {
+            ArrayList<String> datas = new ArrayList<String>();
+            for (String wantedType : typeOfWantedData) {
+                switch (wantedType) {
                     case "Personne":
                         datas.add(generator.randomName());
                         break;
@@ -215,8 +216,9 @@ public class Populater {
                         break;
                 }
             }
-            db.insertInto(table,datas);
+            db.insertInto(table, datas);
             System.out.println(typeOfWantedData);
+        }
            // String[] randomData = {string1,string2,string3};
          //   db.insertInto("bank_card_people",randomData);
         }
