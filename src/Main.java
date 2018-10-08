@@ -1,4 +1,5 @@
 import controller.Menu;
+import controller.Populater;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
@@ -6,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javafx.util.Callback;
 import model.DBManager;
 //regarder ARX
 
@@ -26,6 +28,13 @@ public class Main extends Application {
             //nomme la fenêtre, loade la première scène
             primaryStage.setTitle("Nice Populator");
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/menu.fxml"));
+            fxmlLoader.setControllerFactory(new Callback<Class<?>, Object>() {
+                @Override
+                public Object call(Class<?> param) {
+                    System.out.println("param = [" + param + "]");
+                    return new Menu();
+                }
+            });
             Parent root = fxmlLoader.<Parent>load();
             //donne les dimensions qui vont bien aux Stage et Scene
             Screen screen = Screen.getPrimary();
@@ -53,7 +62,7 @@ public class Main extends Application {
             controller.setBases();
 
             primaryStage.show();
-            DBManager db = new DBManager();
+            DBManager db = DBManager.getInstance();
             System.out.println(db.arrayCertainTable("Example","bank_card_people"));
         }
         catch(Exception e){

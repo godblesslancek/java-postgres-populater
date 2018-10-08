@@ -14,6 +14,8 @@ import model.DBManager;
 import sun.plugin.javascript.navig.Anchor;
 
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Populater {
     //fx:controller="controller.Populater"
@@ -33,6 +35,15 @@ public class Populater {
     Button addToTable;
     public String base;
     public String table;
+
+    public void setNumberOfSelectors(int numberOfSelectors) {
+        this.numberOfSelectors = numberOfSelectors;
+    }
+
+    public int numberOfSelectors;
+
+
+    public List<ChoiceBox<String>> listChoiceBoxes;
 
     public void initialize() {
     }
@@ -64,17 +75,6 @@ public class Populater {
 
 
     }
-
-    public void addToTable() {
-       /*if (!(button.getValue() == null) && !(tables.getValue() == null)){
-            DBManager db = new DBManager();
-        }
-*/
-
-
-
-    }
-
 
 
 
@@ -155,21 +155,42 @@ public class Populater {
     public void setSelectors(int numberOfSelectors){
         try {
             numberNewLines.getItems().addAll("1","2","3", "4", "5", "6","7", "8");
-            numberNewLines.setValue("1");   
+            numberNewLines.setValue("1");
             for (int i = 0;i<numberOfSelectors;i++) {
                 ChoiceBox<String> choice = new ChoiceBox<>();
-                choice.setValue("Personne");
-                String nameChoiceBox = "colonne" + Integer.toString(i);
                 choice.getItems().addAll("Personne", "Chaîne", "Lettre", "Nombre", "Ponctuation", "Mot", "Carte bancaire", "Adresse");
+                choice.setValue("Personne");
+//                listChoiceBoxes.add(choice);
                 anchorPane.getChildren().add(choice);
                 AnchorPane.setTopAnchor(choice, 436.0 + i * 35);
                 AnchorPane.setLeftAnchor(choice, 180.0);
-        }
+            }
         }
         catch (Exception e){
             e.printStackTrace();
         }
     }
+
+    public void addToTable(){
+        /*if (!(button.getValue() == null) && !(tables.getValue() == null)){
+            DBManager db = new DBManager();
+        }
+*/
+        try {
+            List<String> typeOfWantedData = new ArrayList<String>();
+            DBManager db = DBManager.getInstance();
+            for (ChoiceBox cb : listChoiceBoxes){
+                typeOfWantedData.add(cb.getValue().toString());
+            }
+            System.out.println(typeOfWantedData);
+           // String[] randomData = {string1,string2,string3};
+         //   db.insertInto("bank_card_people",randomData);
+        }
+        catch (Exception e){
+
+        }
+    }
+
 
 
 }

@@ -6,7 +6,19 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DBManager {
+public final class DBManager {
+
+    private static DBManager instance = null ;
+    private DBManager(){
+
+    }
+
+    public static DBManager getInstance(){
+        if (instance==null){
+            instance = new DBManager();
+        }
+        return instance;
+    }
 
     static {
         try {
@@ -16,8 +28,6 @@ public class DBManager {
         }
     }
 
-    public DBManager(){
-    }
 
     public void printAllBases() {
         try {
@@ -84,6 +94,25 @@ public class DBManager {
             stmt2.setString(1,firstName);
             stmt2.setString(2,lastName);
             stmt2.setString(3,cardNumber);
+            stmt2.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void insertInto(String table, String[] datas){
+        try {
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Example","postgres","newPassword");
+            String SQL = "insert into public."+table+" (\"first-name\", \"last-name\", \"card-number\") VALUES (?,?,?)";
+
+            PreparedStatement stmt2 = con.prepareStatement(SQL);
+            stmt2.setString(1,table);
+            int i=1;
+            for(String data : datas){
+                stmt2.setString(i,data);
+                i++;
+            }
             stmt2.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();

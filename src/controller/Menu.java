@@ -20,7 +20,7 @@ public class Menu {
     public Scene prevScene;
     public ChoiceBox bases;
     public ChoiceBox tables;
-    DBManager db = new DBManager();
+    DBManager db = DBManager.getInstance();
 
     public void setPrevStage(Stage stage){
         this.prevStage=stage;
@@ -59,6 +59,7 @@ public class Menu {
             ResultSet rs = db.arrayCertainTable(bases.getValue().toString(),tables.getValue().toString());
             controllerPopulater.setTableView(rs);
             controllerPopulater.setSelectors(rs.getMetaData().getColumnCount()-1);
+            controllerPopulater.setNumberOfSelectors(rs.getMetaData().getColumnCount());
             }
             else{
                 System.out.println("Choisissez une base et une table");
