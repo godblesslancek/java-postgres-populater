@@ -20,11 +20,10 @@ public class Main extends Application {
         launch(args);
     }
 
-
-    //ESSAYER DE METTRE LES DEUX PANES DANS UN PANE
     @Override
     public void start(Stage primaryStage) {
         try {
+            //primaryStage=model.StageApp.getInstance().getStage();
             //nomme la fenêtre, loade la première scène
             primaryStage.setTitle("Nice Populator");
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/menu.fxml"));
